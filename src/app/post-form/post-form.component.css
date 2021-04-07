@@ -1,0 +1,33 @@
+main{
+    background-color: rgba(55, 54, 54, 0.558);
+    z-index: 1000;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    background-color: #B1DDEA;
+    
+    width: 50%;
+    padding: 20px;
+    height: 40%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 20px;
+}
+
+button{
+    margin: 15px 0;
+    height: 30px;
+}

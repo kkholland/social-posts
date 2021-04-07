@@ -1,0 +1,19 @@
+<main>
+    <div class='form-container'>
+        <form>
+            <label for='title'>Title</label>
+            <input 
+            name='title'
+            id='title'
+            [(ngModel)]='newTitle'>
+    
+            <label for='thought'>Thought</label>
+            <textarea 
+            name='thought'
+            id='thought'
+            [(ngModel)]='newThought'></textarea>
+        </form>
+        <button (click)='submitPost(newTitle, newThought)'>Add Post</button>
+    </div>
+    
+</main>

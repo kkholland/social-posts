@@ -1,0 +1,16 @@
+<app-post-form *ngIf='newPost'
+(submitted)='onSubmit($event)'
+
+></app-post-form>
+<main>
+    <h1>My Thoughts</h1>
+    <button (click)='newPost = true'>New Thought</button>
+
+    <section class='post-section'>
+        <app-post *ngFor='let post of posts' 
+        [post]='post'
+        (deleted)='onDelete($event)'></app-post>
+    </section>
+</main>
+
+
